@@ -9,8 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Eventos {
-    private int prioridade;
+public class Evento {
+    private Prioridade prioridade;
     private Status status;
-
 }

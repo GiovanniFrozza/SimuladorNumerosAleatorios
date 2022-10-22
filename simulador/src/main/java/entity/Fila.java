@@ -18,13 +18,10 @@ public class Fila {
     private int saidaB;//B
     private int servidor;// C = numero de servidores
     private int capacidade;//K = capacidade da fila
-    private int chegada; //Estado Inicial
+    private double estadoInicial; //Estado Inicial
+    List<Double> numerosAleatorios;
 
-    private int tamanho;//N = tamanho da populacao
-    private int filaDeEspera;
-
-    private List<Eventos> eventosList;
-
+    private List<Evento> eventos;
     /*
     *  G/G/2/3
     *  A/B/C/K
@@ -37,4 +34,5 @@ public class Fila {
     public int saidaClientes(){
         return this.getSaidaB() - this.getSaidaA();
     }
+
 }
